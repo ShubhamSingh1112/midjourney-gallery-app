@@ -1,0 +1,72 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  padding: 1em 0;
+  text-transform: uppercase;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.gallery-item:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Define the grid container */
+.container > div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 20px; /* space between items */
+  margin-bottom: 20px;
+}
+
+/* Define the grid items */
+.gallery-item {
+  text-align: center; /* center text */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-item h3 {
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Media query for medium screens */
+@media screen and (max-width: 1025px) {
+  .container > div {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 840px) {
+  .container > div {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container > div {
+    grid-template-columns: repeat(1, 1fr); /* 1 columns */
+  }
+  .title {
+    height: 3em;
+    font-size: large;
+    padding: 1em;
+    text-align: center;
+  }
+}
