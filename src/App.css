@@ -45,15 +45,17 @@
 
 footer {
   text-align: center;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .dark {
   background-color: #171717;
+  color: #fff;
 }
 
 .light {
   background-color: #fff;
+  color: #171717;
 }
 
 .toggle-switch {
