@@ -46,6 +46,7 @@
 footer {
   text-align: center;
   padding: 1rem 0;
+  padding: 0 1rem;
 }
 
 .dark {
@@ -100,6 +101,10 @@ footer {
 
 .dark .icons {
   transform: translateX(25px);
+}
+
+svg {
+  color: #646cff;
 }
 
 /* Media query for medium screens */

@@ -20,6 +20,7 @@ function App() {
       <h1 className="title">Midjourney Gallery</h1>
       <Gallery />
       <footer>
+        <hr/>
         <p>&copy; Shubham Singh 2023.</p>
       </footer>
     </div>
