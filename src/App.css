@@ -18,17 +18,20 @@
 }
 
 /* Define the grid container */
-.container > div {
+.container>div {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-gap: 20px; /* space between items */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  grid-gap: 20px;
+  /* space between items */
   margin-bottom: 20px;
 }
 
 /* Define the grid items */
 .gallery-item {
-  text-align: center; /* center text */
+  text-align: center;
+  transition: 0.2s ease-in-out;
 }
 
 .gallery-item img {
@@ -45,24 +48,80 @@ footer {
   margin: 1rem 0;
 }
 
+.dark {
+  background-color: #171717;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 20px;
+}
+
+.toggle-switch-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #bdc3c7;
+  border-radius: 34px;
+  transition: background-color 0.2s;
+}
+
+.toggle-switch-label input {
+  opacity: 0;
+}
+
+.icons {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 3px;
+  bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.dark .icons {
+  transform: translateX(25px);
+}
+
 /* Media query for medium screens */
 @media screen and (max-width: 1025px) {
-  .container > div {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  .container>div {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
   }
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 840px) {
-  .container > div {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  .container>div {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
   }
 }
 
 @media screen and (max-width: 576px) {
-  .container > div {
-    grid-template-columns: repeat(1, 1fr); /* 1 columns */
+  .container>div {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 columns */
   }
+
   .title {
     height: 3em;
     font-size: large;
