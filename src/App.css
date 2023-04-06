@@ -7,7 +7,7 @@
 
 .title {
   text-align: center;
-  padding: 1em 0;
+  padding: 1rem 0;
   text-transform: uppercase;
   will-change: filter;
   transition: filter 300ms;
@@ -67,8 +67,8 @@ footer hr {
   position: relative;
   display: inline-block;
   width: 60px;
-  height: 34px;
-  margin-bottom: 20px;
+  height: 30px;
+  margin: 0.5rem;
 }
 
 .toggle-switch-label {
@@ -90,8 +90,8 @@ footer hr {
 .icons {
   position: absolute;
   content: "";
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
   left: 3px;
   bottom: 3px;
   display: flex;
