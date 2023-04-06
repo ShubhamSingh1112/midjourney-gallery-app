@@ -111,6 +111,28 @@ svg {
   color: #646cff;
 }
 
+/* Adding Shimmer Effect */
+.shimmer {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,
+      #f0f0f0 0px,
+      #d8d8d8 50%,
+      #f0f0f0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 /* Media query for medium screens */
 @media screen and (max-width: 1025px) {
   .container>div {
