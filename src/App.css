@@ -28,6 +28,10 @@
   margin-bottom: 20px;
 }
 
+a[data-fancybox="gallery"] {
+  display: block;
+}
+
 /* Define the grid items */
 .gallery-item {
   text-align: center;
@@ -121,7 +125,7 @@ svg {
       #d8d8d8 50%,
       #f0f0f0 100%);
   background-size: 200% 100%;
-  grid-gap: 20px;
+  margin-bottom: 20px;
   animation: shimmer 1s ease-in-out infinite;
 }
 
