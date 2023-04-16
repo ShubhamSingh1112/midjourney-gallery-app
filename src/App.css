@@ -121,6 +121,7 @@ svg {
       #d8d8d8 50%,
       #f0f0f0 100%);
   background-size: 200% 100%;
+  grid-gap: 20px;
   animation: shimmer 1s ease-in-out infinite;
 }
 
